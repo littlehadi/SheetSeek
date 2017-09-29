@@ -1,5 +1,5 @@
 # SheetSeek #
-===========================================
+
 ### Team name: SheetSeek Co ###
 
 ### Team member names: ###
