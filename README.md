@@ -2,12 +2,12 @@
 
 ### Team name: SheetSeek Co ###
 
-### Team member names: ###
-Majd Khodr - Student number: 300010619.
-Zi Gao - Student number: 300010911
-Joseph Abboud - Student number: 300021925
-Dounia Mansouri - Student number: 300011232
-Enrick Rainville - Student number: 
+### Team member names: ### 
+Majd Khodr - Student number: 300010619 <br />
+Zi Gao - Student number: 300010911  <br />
+Joseph Abboud - Student number: 300021925  <br /> 
+Dounia Mansouri - Student number: 300011232  <br />
+Enrick Rainville - Student number: 300036704  <br />
 
 ## Product name: SheetSeek ##
 
