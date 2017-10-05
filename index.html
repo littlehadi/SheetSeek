@@ -1,28 +1,81 @@
 <html>
     <head>
+        <!-- basic boilerplate code, imports the JavaScript and CSS files -->
         <title>SheetSeek</title>
+        <link rel="shortcut icon" href="logo.png" type="image/png" />
         <link rel="stylesheet" type="text/css" href="index.css">
         <script src="myscripts.js"></script>
         <script src="jquery-3.2.1.js"></script>
     </head>
 
     <body>
-        <header>
-            <img src="" alt="SheetSeek Logo">
-            <h3>
-                About
-            </h3>
-            <h3>
-                Features
-            </h3>
-            <h3>
-                The Team
-            </h3>
-            <h3>
-                Contact
-            </h3>
-        </header>
-        <img src="" alt="Background Image">
-        <h1>SheetSeek</h1>
+        <!-- header bar at top of page -->
+        <div id="headerDiv">
+            <header id="headerBar">
+                <img src="logo.png" alt="SheetSeek Logo" id="headerLogo" height="50" width="50">
+                <h3 class="navTab" id="firstNavTab">
+                    About
+                </h3>
+                <h3 class="navTab">
+                    Features
+                </h3>
+                <h3 class="navTab">
+                    The Team
+                </h3>
+                <h3 class="navTab">
+                    Contact
+                </h3>
+            </header>
+        </div>
+        <div id="pictureDiv">
+            <img src="mainPicture.jpg" alt="Background Image" id="mainImage">
+        </div>
+        <div id="aboutDiv"> 
+            <h1 class="heading">
+                WHAT WE DO
+            </h1>
+            <img src="logo.png" alt="logo" id="aboutLogo">
+            <p id="aboutDescription">
+            </p>
+        </div>
+        <div id="featuresDiv"> 
+            <h1 id="slogan">
+                Made by Students for Students
+            </h1>
+            <h1 class="heading">
+                FEATURES
+            </h1>
+            <img src="logo.png" alt="icon" id="feature1">
+            <p id="feature1Description">
+            </p>
+            <img src="logo.png" alt="icon" id="feature2">
+            <p id="feature2Description">
+            </p>
+            <img src="logo.png" alt="icon" id="feature3">
+            <p id="feature3Description">
+            </p>
+        </div>
+        <div id="theTeamDiv"> 
+            <h1 class="heading">
+                THE TEAM
+            </h1> 
+            <div class="memberPortrait">
+            </div> 
+            <div class="memberPortrait">
+            </div> 
+            <div class="memberPortrait">
+            </div>
+            <div class="memberPortrait">
+            </div> 
+            <div class="memberPortrait">
+            </div> 
+        </div>
+        <div id="contactDiv"> 
+            <h1 class="heading">
+                CONTACT US
+            </h1>
+        </div>
+        <footer>
+        </footer>
     </body>
 </html>
