@@ -62,7 +62,74 @@ header{
     height: 100%;
 }
 
-h1.heading{
+/*
+    For all the description paragraphs
+*/
+.description{
+    display: flex;
 }
 
 
+/*
+    For the images that go alongside the description paragraphs
+*/
+.sideImage{
+    float: left;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    width: 20%;
+}
+
+/*
+    For all the headings (titles)
+*/
+.heading{
+    width: 100%;
+    text-align: center;
+}
+
+/*
+    For all the main section divs
+*/
+.section{
+    width:100%;
+    clear: both;
+}
+
+/*
+    The footer text at the bottom of the page
+*/
+#footerLogo{
+    text-align: center;
+}
+
+/*
+    The containers for the team member portraits
+*/
+.memberPortrait{
+    float: left;
+    width: 33%;
+}
+
+
+.memberDescription{
+    text-align: center;
+    justify-content: center;
+}
+
+.headshot{
+    display: block;
+    margin: auto;
+}
+
+form{
+    margin-left: 15%;
+    float: left;
+    width: 30%;
+    padding-right: 20%;
+}
+
+input{
+    width: 100%;
+}
