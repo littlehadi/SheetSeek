@@ -11,6 +11,10 @@
 html, body{
     padding: 0px;
     margin: 0px;
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 /*
@@ -23,7 +27,11 @@ header{
     width: 100%;
     height: 7%;
     border-bottom:1px solid gray;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(60,63,62, 1);
+}
+
+span{
+    display: inline;
 }
 
 /*
@@ -31,17 +39,15 @@ header{
 */
 .navTab{
     float: left;
-    padding-left: 2%;
-    padding-right: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 1%;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white
 }
 
-/*
-    Just for the first nav tab
-*/
-#firstNavTab{
-    padding-left: 50%;
+.navTab:hover{
+    border-bottom: 2px solid white;
 }
 
 /*
@@ -49,24 +55,27 @@ header{
 */
 #headerLogo{
     float: left;
-    margin-left: 5%;
+    margin-left: 3%;
     width: 4%;
     height: 100%;
+    padding-right: 2%;
 }
 
 /*
     The main background image
 */
 #mainImage{
-    width: 100%;
+    width: 70%;
     height: 100%;
+    display: block;
+    margin: auto;
 }
 
 /*
     For all the description paragraphs
 */
 .description{
-    display: flex;
+    padding: 10%;
 }
 
 
@@ -79,6 +88,8 @@ header{
     padding-right: 8%;
     padding-top: 5%;
     width: 20%;
+    display: block;
+    padding-bottom: 10%;
 }
 
 /*
@@ -87,6 +98,7 @@ header{
 .heading{
     width: 100%;
     text-align: center;
+    padding-top: 5%;
 }
 
 /*
@@ -95,13 +107,24 @@ header{
 .section{
     width:100%;
     clear: both;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
 }
 
 /*
     The footer text at the bottom of the page
 */
 #footerLogo{
+    padding-bottom: 5%;
     text-align: center;
+}
+
+#slogan{
+    padding-bottom: 5%;
+    color: white;
+    font-size: 4em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 /*
@@ -128,8 +151,35 @@ form{
     float: left;
     width: 30%;
     padding-right: 20%;
+    padding-bottom: 15%;
 }
 
 input{
     width: 100%;
 }
+
+#aboutDiv{
+    background-color: white;
+}
+
+#featuresDiv{
+    background-color: white;
+}
+
+#theTeamDiv{
+    background-color: yellow;
+}
+
+#contactDiv{
+    background-color: white;
+}
+
+#line{
+    height: 10px;
+    width: 50%;
+    border-bottom: 1.5px solid white;
+    float: left;
+    padding-top: 1.2%;
+    margin-right: 2%;
+}
+
