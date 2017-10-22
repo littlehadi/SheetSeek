@@ -1,0 +1,197 @@
+/*
+    This is the stylesheet for the main HTML document.
+    Remember to document properly (what selector does what) when you make a style change!
+    -------------------------------------------------------------------------------------
+*/
+
+
+/*
+    General stuff for the html and body
+*/
+html, body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/*
+    Styling for the header block
+*/
+header{
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    border-bottom:1px solid gray;
+    background-color: rgba(60,63,62, 0.8);
+}
+
+span{
+    display: inline;
+}
+
+/*
+    For all the individual navigation link tabs
+*/
+.navTab{
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white
+}
+
+.navTab:hover{
+    border-bottom: medium none color;
+    border-bottom: 2px solid white;
+}
+
+/*
+    For the logo image in the header
+*/
+#headerLogo{
+    float: left;
+    margin-left: 3%;
+    width: 4%;
+    height: 100%;
+    padding-right: 2%;
+}
+
+/*
+    The main background image
+*/
+#mainImage{
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+/*
+    For all the description paragraphs
+*/
+.description{
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+
+/*
+    For the images that go alongside the description paragraphs
+*/
+.sideImage{
+    float: left;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    width: 20%;
+    display: block;
+    padding-bottom: 10%;
+}
+
+/*
+    For all the headings (titles)
+*/
+.heading{
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 4em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*
+    For all the main section divs
+*/
+.section{
+    width:100%;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+/*
+    The footer text at the bottom of the page
+*/
+#footerLogo{
+    text-align: center;
+    color: rgb(211,239,255);
+    font-size: 1.4em;
+    font-family: "Abel", serif;
+}
+
+#slogan{
+    padding-bottom: 5%;
+    color: white;
+    font-size: 4em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*
+    The containers for the team member portraits
+*/
+.memberPortrait{
+    float: left;
+    width: 33%;
+}
+
+
+.memberDescription{
+    text-align: center;
+    justify-content: center;
+}
+
+.headshot{
+    display: block;
+    margin: auto;
+}
+
+form{
+    margin-left: 15%;
+    float: left;
+    width: 30%;
+    padding-right: 20%;
+    padding-bottom: 21%;
+}
+
+input{
+    width: 100%;
+}
+
+#aboutDiv{
+    background-color: white;
+}
+
+#featuresDiv{
+    background-color: white;
+}
+
+#theTeamDiv{
+    background-color: rgba(240,250,255,0.9);
+}
+
+#contactDiv{
+    background-color: white;
+}
+
+#line{
+    height: 10px;
+    width: 50%;
+    border-bottom: 1.5px solid white;
+    float: left;
+    padding-top: 1.2%;
+    margin-right: 2%;
+}
+
+footer{
+    background-color: rgba(48, 49, 51, 1);
+}
+
