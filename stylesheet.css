@@ -121,6 +121,24 @@ span{
 }
 
 /*
+    "Who we are heading" (title)
+*/
+
+.subheading{
+
+    text-align: center;
+    font-family:"Avenir LT Std 35 Light"; 
+    font-size:2em;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    width: 20%;
+
+
+
+}
+
+/*
     For all the main section divs
 */
 .section{
@@ -180,7 +198,7 @@ input{
 }
 
 #aboutDiv{
-    background-color: rgb(250, 242, 231);
+    background-color: rgba(248,248,248,1);
 }
 
 #featuresDiv{
@@ -188,7 +206,7 @@ input{
 }
 
 #theTeamDiv{
-    background-color: rgba(240,250,255,0.9);
+    background-color: rgba(240,250,255,0.95);
 }
 
 #contactDiv{
