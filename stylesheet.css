@@ -4,6 +4,11 @@
     -------------------------------------------------------------------------------------
 */
 
+@font-face{
+    font-family: niceFont;
+    src: url(niceFont.otf);
+}
+
 
 /*
     General stuff for the html and body
@@ -27,7 +32,7 @@ header{
     width: 100%;
     height: 7%;
     border-bottom:1px solid gray;
-    background-color: rgba(60,63,62, 0.8);
+    background-color: rgba(60,63,62, 0.95);
 }
 
 span{
@@ -41,9 +46,11 @@ span{
     float: left;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 1%;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: white
+    margin-top: 1.3%;
+    font-family: niceFont;
+    color: white;
+    font-size: 0.9em;
+    letter-spacing: 0.4em;
 }
 
 .navTab:hover{
@@ -76,12 +83,18 @@ span{
     For all the description paragraphs
 */
 .description{
-    padding-right: 10%;
-    padding-bottom: 10%;
+    padding-right: 6%;
+    padding-bottom: 4%;
     padding-left: 10%;
-    padding-top: 5%;
+    padding-top: 4%;
+    line-height: 250%;
+    font-size: 1.2em;
+    font-family: niceFont;
 }
 
+#subDiv3{
+    margin-bottom: 10%;
+}
 
 /*
     For the images that go alongside the description paragraphs
@@ -90,10 +103,9 @@ span{
     float: left;
     padding-left: 8%;
     padding-right: 8%;
-    padding-top: 5%;
     width: 20%;
     display: block;
-    padding-bottom: 10%;
+    padding-top: 3%;
 }
 
 /*
@@ -104,7 +116,8 @@ span{
     text-align: center;
     padding-top: 5%;
     font-size: 4em;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: niceFont;
+    letter-spacing: 0.5em;
 }
 
 /*
@@ -124,15 +137,15 @@ span{
 #footerLogo{
     text-align: center;
     color: rgb(211,239,255);
-    font-size: 1.4em;
-    font-family: "Abel", serif;
+    font-size: 2em;
+    font-family: niceFont;
 }
 
 #slogan{
     padding-bottom: 5%;
     color: white;
     font-size: 4em;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: niceFont;
 }
 
 /*
@@ -167,7 +180,7 @@ input{
 }
 
 #aboutDiv{
-    background-color: white;
+    background-color: rgb(250, 242, 231);
 }
 
 #featuresDiv{
@@ -184,7 +197,7 @@ input{
 
 #line{
     height: 10px;
-    width: 50%;
+    width: 45%;
     border-bottom: 1.5px solid white;
     float: left;
     padding-top: 1.2%;
