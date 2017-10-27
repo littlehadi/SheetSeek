@@ -5,34 +5,14 @@ function pageScroll(s){
     clearInterval(repeat);
     if (s == 0){
         var top = $("#aboutDiv")[0].getBoundingClientRect().top;
-        $("#fourthNavTab").css("border-bottom", "medium none color");
-        $("#secondNavTab").css("border-bottom", "medium none color");
-        $("#thirdNavTab").css("border-bottom", "medium none color");
-        $("#firstNavTab").css("border-bottom", "2.5px solid white");
     } else if (s == 1){
         var top = $("#featuresDiv")[0].getBoundingClientRect().top;
-        $("#fourthNavTab").css("border-bottom", "medium none color");
-        $("#firstNavTab").css("border-bottom", "medium none color");
-        $("#thirdNavTab").css("border-bottom", "medium none color");
-        $("#secondNavTab").css("border-bottom", "2.5px solid white");
     } else if (s == 2){
         var top = $("#theTeamDiv")[0].getBoundingClientRect().top;
-        $("#fourthNavTab").css("border-bottom", "medium none color");
-        $("#secondNavTab").css("border-bottom", "medium none color");
-        $("#firstNavTab").css("border-bottom", "medium none color");
-        $("#thirdNavTab").css("border-bottom", "2.5px solid white");
     } else if (s == 3){
         var top = $("#contactDiv")[0].getBoundingClientRect().top;
-        $("#firstNavTab").css("border-bottom", "medium none color");
-        $("#secondNavTab").css("border-bottom", "medium none color");
-        $("#thirdNavTab").css("border-bottom", "medium none color");
-        $("#fourthNavTab").css("border-bottom", "2.5px solid white");
     } else if (s==4){
         var top = $("#mainImage")[0].getBoundingClientRect().top;
-        $("#fourthNavTab").css("border-bottom", "medium none color");
-        $("#secondNavTab").css("border-bottom", "medium none color");
-        $("#thirdNavTab").css("border-bottom", "medium none color");
-        $("#firstNavTab").css("border-bottom", "medium none color");
     } 
      
     if (top>2){
@@ -61,4 +41,57 @@ function pageScroll(s){
             window.scrollBy(0, yPos);
         }
     }, 10);
+}
+
+window.onscroll = function(e){
+    var featureTop = $("#featuresDiv")[0].getBoundingClientRect().top;
+    var aboutTop = $("#aboutDiv")[0].getBoundingClientRect().top;
+    var teamTop = $("#theTeamDiv")[0].getBoundingClientRect().top;
+    var contactTop = $("#contactDiv")[0].getBoundingClientRect().top;
+    if (aboutTop <= 36 && featureTop >36){
+        $("#fourthNavTab").css("border-top", "0");
+        $("#fourthNavTab").css("border-bottom", "0");
+        $("#firstNavTab").css("border-bottom", "2px solid white");
+        $("#firstNavTab").css("border-top", "2px solid white");
+        $("#secondNavTab").css("border-top", "0");
+        $("#secondNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-top", "0");
+    } else if (featureTop <= 36 && teamTop >36){
+        $("#fourthNavTab").css("border-top", "0");
+        $("#fourthNavTab").css("border-bottom", "0");
+        $("#secondNavTab").css("border-bottom", "2px solid white");
+        $("#secondNavTab").css("border-top", "2px solid white");
+        $("#firstNavTab").css("border-top", "0");
+        $("#firstNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-top", "0");
+    } else if (teamTop <= 36 && contactTop >36){
+        $("#fourthNavTab").css("border-top", "0");
+        $("#fourthNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-bottom", "2px solid white");
+        $("#thirdNavTab").css("border-top", "2px solid white");
+        $("#firstNavTab").css("border-top", "0");
+        $("#firstNavTab").css("border-bottom", "0");
+        $("#secondNavTab").css("border-bottom", "0");
+        $("#secondNavTab").css("border-top", "0");
+    } else if (contactTop <= 36){
+        $("#secondNavTab").css("border-top", "0");
+        $("#secondNavTab").css("border-bottom", "0");
+        $("#fourthNavTab").css("border-bottom", "2px solid white");
+        $("#fourthNavTab").css("border-top", "2px solid white");
+        $("#firstNavTab").css("border-top", "0");
+        $("#firstNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-top", "0");
+    } else {
+        $("#fourthNavTab").css("border-top", "0");
+        $("#fourthNavTab").css("border-bottom", "0");
+        $("#secondNavTab").css("border-bottom", "0");
+        $("#secondNavTab").css("border-top", "0");
+        $("#firstNavTab").css("border-top", "0");
+        $("#firstNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-bottom", "0");
+        $("#thirdNavTab").css("border-top", "0");
+    }
 }
