@@ -46,12 +46,12 @@ span{
 .navTab{
     float: left;
     margin-left: 2.1%;
-    margin-right: 2.1%;
-    margin-top: 0.8%;
+    margin-right: 2.8%;
+    margin-top: 1.2%;
     font-family: niceFont;
     color: white;
-    font-size: 0.9em;
-    letter-spacing: 0.4em;
+    font-size: 0.85em;
+    letter-spacing: 0.35em;
     padding-bottom: 0.5%;
     padding-left: 0.3%;
     padding-top: 0.5%;
@@ -59,8 +59,9 @@ span{
 }
 
 .navTab:hover{
-    background-color: rgba(250, 250, 250, 0.15);
+    background-color: rgba(122,203,249, 0.15);
     padding-top: 0.6%;
+    cursor: pointer;
 }
 
 
@@ -171,7 +172,7 @@ span{
 #footerLogo{
     text-align: center;
     margin-top: 2%;
-    color: rgb(214,215,214);
+    color: rgb(240,240,240);
     font-size: 0.9em;
     font-family: niceFont;
 }
@@ -183,14 +184,15 @@ span{
 #footerLogo2{
     text-align: center;
     margin-bottom: 3%;
-    color: rgb(214,215,214);
-    font-size: 0,8em;
+    color: rgb(240,240,240);
+    font-size: 1em;
     font-family: niceFont;
 }
 
 
 #slogan{
-    padding-bottom: 5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
     color: white;
     font-size: 4em;
     font-family: niceFont;
@@ -249,7 +251,7 @@ input{
 }
 
 #aboutDiv{
-    background-color: rgba(245,245,245,1);
+    background-color: rgba(246,246,246,1);
 }
 
 #featuresDiv{
@@ -257,7 +259,7 @@ input{
 }
 
 #theTeamDiv{
-    background-color: rgba(240,250,255,0.93);
+    background-color: rgba(240,252,255,0.93);
 }
 
 #contactDiv{
@@ -267,7 +269,7 @@ input{
 }
 
 #subDiv2{
-    background-color: rgb(240,255,255);
+    background-color: rgb(240,253,255);
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -288,7 +290,7 @@ input{
 }
 
 footer{
-    background-color: rgba(55, 55, 55, 1);
+    background-color: rgba(40, 40, 40, 1);
 }
 
 textarea{
