@@ -168,11 +168,11 @@ span{
 /*
     The footer text at the bottom of the page
 */
-#footerLogo{
+.footerText{
     text-align: center;
     margin-top: 2%;
     color: rgb(214,215,214);
-    font-size: 0.9em;
+    font-size: 1.4em;
     font-family: niceFont;
 }
 
@@ -180,13 +180,6 @@ span{
     The footer text at the bottom of the page
 */
 
-#footerLogo2{
-    text-align: center;
-    margin-bottom: 3%;
-    color: rgb(214,215,214);
-    font-size: 0,8em;
-    font-family: niceFont;
-}
 
 
 #slogan{
@@ -325,7 +318,7 @@ textarea{
 }
 .titleLine2{
     width: 65%;
-    background-color: rgb(248, 175, 39);
+    background-color: rgb(247, 180, 55);
     margin-left: 55%;
     height: 0.7%;
     margin-top: 2%;
@@ -335,4 +328,24 @@ textarea{
 
 #firstNavTab{
     margin-left: 40%;
+}
+
+#infoStuff{
+    color: rgb(214,215,214);
+    font-size: 0,8em;
+    font-family: niceFont;
+    padding-top: 2%;
+}
+
+.socialMedia{
+    width: 8%;
+    height: 4.6%;
+    margin-left: 5.5%;
+    margin-right: 3%;
+    margin-top: 5%;
+}
+
+.bottomDiv{
+    display: inline;
+    float: left;
 }
