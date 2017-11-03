@@ -1,5 +1,7 @@
 var repeat;
 var condition = 0;
+var w = 0;
+var h = 0;
 
 function pageScroll(s){
     var direction = 0;
@@ -110,4 +112,44 @@ window.onscroll = function(e){
             condition = 0;
         }
     }
+
+    var lineLength;
+    var marginLength;
+    if (Math.abs(aboutTop) < 400){
+        lineLength = String(100 - Math.abs(aboutTop)/4);
+        marginLength = String((Math.abs(aboutTop)/4));
+        $(".titleLine1").css("width", lineLength.concat("%"));
+        $(".titleLine2").css("width", lineLength.concat("%"));
+        $(".titleLine2").css("margin-left", marginLength.concat("%"));
+    }else if (Math.abs(featureTop) < 400){
+        lineLength = String(100 - Math.abs(featureTop)/4);
+        marginLength = String((Math.abs(featureTop)/4));
+        $(".titleLine1").css("width", lineLength.concat("%"));
+        $(".titleLine2").css("width", lineLength.concat("%"));
+        $(".titleLine2").css("margin-left", marginLength.concat("%"));
+    }else if (Math.abs(teamTop) < 400){
+        lineLength = String(100 - Math.abs(teamTop)/4);
+        marginLength = String((Math.abs(teamTop)/4));
+        $(".titleLine1").css("width", lineLength.concat("%"));
+        $(".titleLine2").css("width", lineLength.concat("%"));
+        $(".titleLine2").css("margin-left", marginLength.concat("%"));
+    }else if (Math.abs(contactTop) < 400){
+        lineLength = String(100 - Math.abs(contactTop)/4);
+        marginLength = String((Math.abs(contactTop)/4));
+        $(".titleLine1").css("width", lineLength.concat("%"));
+        $(".titleLine2").css("width", lineLength.concat("%"));
+        $(".titleLine2").css("margin-left", marginLength.concat("%"));
+    }
+
 }
+
+window.onresize = function(event){
+    w = $(window).width();
+    h = $(window).height();
+    var newHeight = String((w/5.2));
+    $(".headshot").css("height", newHeight);
+    
+    if ($("#fourthNavTab")[0].getBoundingClientRect().top >= 20){
+        $(".navTab").css("display", "none");
+    }
+};
