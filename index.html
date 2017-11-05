@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <script src="javascript.js"></script>
         <script src="jquery-3.2.1.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -15,18 +16,17 @@
         <div class="section" id="headerDiv">
             <header id="headerBar">
                 <img onClick="pageScroll(4)" src="./img/logoWhite.png" alt="SheetSeek Logo" id="headerLogo">
-                <div id="line"></div>
                 <h3 onClick="pageScroll(0)" class="navTab" id="firstNavTab">
-                    About
+                    ABOUT
                 </h3>
                 <h3 onClick="pageScroll(1)" class="navTab" id="secondNavTab">
-                    Features
+                    FEATURES
                 </h3>
                 <h3 onClick="pageScroll(2)" class="navTab" id="thirdNavTab">
-                    The Team
+                    THE TEAM
                 </h3>
                 <h3 onClick="pageScroll(3)" class="navTab" id="fourthNavTab">
-                    Contact
+                    CONTACT
                 </h3>
             </header>
         </div>
@@ -43,30 +43,20 @@
             Contains visual to the left side and a text paragraph to the left 
         -->
         <div class="section" id="aboutDiv"> 
+            <div class="titleLine1"></div>
             <h1 class="heading" id="aboutUsHeading">
-                WHAT WE DO
+                OUR MISSION
             </h1>
-            <img class="sideImage" src="./img/logo.png" alt="logo" id="aboutLogo">
-            <p class="description" id="aboutDescription">
-                <span class="subheading">Our Beliefs</span>
-                <br>
-                <br>
-                <br>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                in culpa qui officia deserunt mollit anim id est laborum."
-                <br>
-                <br>
-                <br>
-                <br>
-                <span class="subheading"> Who we are</span>
-                <br>
-                <br>
-                <br>
-                "SheetSeek was built with the main purpose of helping and facilitating students lives. We understand the amount of stress that some of you might be going through and want to create a simple platform that not only helps students, but relieves some of the responsibilities that comes along with purchasing school related products. 
-            </p>
+            <div class="titleLine2"></div>
+            <div class="subDiv" id="subDiv3">
+                <img class="sideImage" src="./img/book.png" style="margin-top: 0; padding-top: 0;" alt="logo" id="aboutLogo">
+                <p class="description" id="aboutDescription">
+                    <strong>SheetSeek</strong> was built with the main purpose of helping and facilitating students lives. 
+                    A survey conducted in 2016 proved that more than <b>90 percent</b> of students found post-secondary education to be a very stressful experience. 
+                    That's why there's SheetSeek. We wanted to create a simple and helpful platform that relieves some of the responsibilities 
+                    and stress that comes along with purchasing school related products. 
+                </p>
+            </div>
         </div>
         
         <!-- 
@@ -74,96 +64,45 @@
             Contains the Slogan, 3 visuals in a column on the left and three paragraphs on the right. 
         -->
         <h1 class="heading" id="slogan">
-            MADE <span style="text-decoration: italic">BY</span> STUDENTS <span style="text-decoration: italic">FOR</span> STUDENTS
+            MADE BY STUDENTS
+            <br>
+            FOR STUDENTS
         </h1>
         <div class="section" id="featuresDiv">  
+            <div class="titleLine1"></div>
             <h1 class="heading" id="featuresHeading">  
                 FEATURES
             </h1>
-            <img class="sideImage" src="./img/logo.png" alt="icon" id="featurePic1">
-            <p class="description" id="featureDescription1">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                    in culpa qui officia deserunt mollit anim id est laborum."
+            <div class="titleLine2"></div>
+            <div class="subDiv" id="subDiv1">
+                <img class="sideImage" src="./img/magnifyingGlass.png" alt="icon" id="featurePic1">
+                <p class="description" id="featureDescription1">
+                    <span class="subheading">No More Confusion, No More Stress</span>
                     <br>
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
                     <br>
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            </p>
-            <img class="sideImage" src="./img/logo.png" alt="icon" id="featurePic2">
-            <p class="description" id="featureDescription2">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                    in culpa qui officia deserunt mollit anim id est laborum."
+                    Buying textbooks and other school equipment is always a pain in the rear. "<i>Which book do I need? What edition is 
+                    acceptable?</i> " <strong> SheetSeek </strong> remedies the pain by creating a list of items required for each and every class you have.
+                    No need for a hassle to create an account, just sign in with whatever virtual campus your school is using! 
+                </p>
+            </div>
+            <div class="subDiv" id="subDiv2">
+                <img class="sideImage" src="./img/phone.png" alt="icon" id="featurePic2">
+                <p class="description" id="featureDescription2">
+                    <span class="subheading">All Your Needs In One Place</span>
                     <br>
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
                     <br>
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            </p>
-            <img class="sideImage" src="./img/logo.png" alt="icon" id="featurePic3">
-            <p class="description" id="featureDescription3">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                    in culpa qui officia deserunt mollit anim id est laborum."
+                    Based off your classes, <strong> SheetSeek </strong> manages to display a list of the exact supplies and books you would need, also providing suggestions for locations to buy them and recommendations for other course related things. You'll be able to find old tests, notes, assignments and even lab gear! All of that and  <strong> SheetSeek </strong> even provides discounts!
+                </p>
+            </div>
+            <div class="subDiv" id="subDiv3">
+                <img class="sideImage" src="./img/studentCommunity.png" alt="icon" id="featurePic3">
+                <p class="description" id="featureDescription3">
+                    <span class="subheading">Your Own Student Community</span>
                     <br>
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
                     <br>
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            </p>
+                    <strong> SheetSeek </strong> serves as a centralized hub for fellow students who are trying to buy and resell their textbooks as well as other school materials in special groupchats based on course codes! It enables fast and easy communication between students, eliminating the burden of buying and selling. 
+                </p>
+            </div>
         </div>
 
         <!-- 
@@ -171,37 +110,74 @@
             Contains 5 little team member boxes - see mockups for more info 
         -->
         <div class="section" id="theTeamDiv"> 
+            <div class="titleLine1"></div>
             <h1 class="heading" id="teamHeading">
                 THE TEAM
-            </h1> 
+            </h1>
+            <div class="titleLine2"></div> 
             <div class="memberPortrait">
-                <img class="headshot" id="ziHeadshot" src="./img/person.png" alt="Zi Gao">
+                <img class="headshot" id="ziHeadshot" src="./img/ziPic.png" alt="Zi Gao">
                 <p class="memberDescription" id="ziDescription">
-                    Lorem Ipsum
-                </p>
-            </div> 
-            <div class="memberPortrait">
-                <img class="headshot" id="enrickHeadshot" src="./img/person.png" alt="Enrick Rainville">
-                <p class="memberDescription" id="enrickDescription">
-                    Lorem Ipsum
-                </p>
-            </div> 
-            <div class="memberPortrait">
-                <img class="headshot" id="majdHeadshot" src="./img/person.png" alt="Majd Khodr">
-                <p class="memberDescription" id="majdDescription">
-                    Lorem Ipsum
+                    <span class="name">Zi Gao</span>
+                    <br>
+                    <span class="title">Co-Founder/CEO</span>
+                    <br>
+                    <br>
+                    <i>"Those who are crazy enough to think they can change the world are the ones that do."</i>
+                    <br>
+                    -Steve Jobs
                 </p>
             </div>
+            <div class="memberPortrait">
+                <img class="headshot" id="enrickHeadshot" src="./img/enrickPic.png" alt="Enrick Rainville">
+                <p class="memberDescription" id="enrickDescription">
+                    <span class="name">Enrick Rainville</span>
+                    <br>
+                    <span class="title">Co-Founder/CDO</span>
+                    <br>
+                    <br>
+                    <i>"Creativity is allowing yourself to make mistakes, design is knowing which ones to keep."</i>
+                    <br>
+                    -Scott Adams
+                </p>
+            </div>
+            <div class="memberPortrait" id="fifthPortrait">
+                <img class="headshot" id="majdHeadshot" src="./img/majdPic.png" alt="Majd Khodr">
+                <p class="memberDescription" id="josephDescription">
+                    <span class="name">Majd Khodr</span>
+                    <br>
+                    <span class="title">Co-Founder/CMO</span>
+                    <br>
+                    <br>
+                    <i>"Have patience. All things are difficult before they become easy."</i>
+                    <br>
+                    -Saadi
+                </p>
+            </div>  
             <div class="memberPortrait" id="fourthPortrait" style="margin-left: 17%">
-                <img class="headshot" id="douniaHeadshot" src="./img/person.png" alt="Dounia Mansouri">
+                <img class="headshot" id="douniaHeadshot" src="./img/douniaPic.png" alt="Dounia Mansouri">
                 <p class="memberDescription" id="douniaDescription">
-                    Lorem Ipsum
+                    <span class="name">Dounia Mansouri</span>
+                    <br>
+                    <span class="title">Co-Founder/CHRO</span>
+                    <br>
+                    <br>
+                    <i>"Difficult roads often leads to beautiful destinations."</i>
+                    <br>
+                    -Zig Ziglar
                 </p>
             </div> 
-            <div class="memberPortrait" id="fifthPortrait">
-                <img class="headshot" id="josephHeadshot" src="./img/person.png" alt="Joseph Abboud">
+            <div class="memberPortrait">
+                <img class="headshot" id="josephHeadshot" src="./img/josephPic.png" alt="Joseph Abboud">
                 <p class="memberDescription" id="josephDescription">
-                    Lorem Ipsum
+                    <span class="name">Joseph Abboud</span>
+                    <br>
+                    <span class="title">Co-Founder/CVO</span>
+                    <br>
+                    <br>
+                    <i>"If people are trying to bring you down, it only means that you're above them"</i>
+                    <br>
+                    -Bella Thorne
                 </p>
             </div> 
         </div>
@@ -210,52 +186,74 @@
             The contact section div, contains the fill in form for emailing.
             Will also have other contact information e.g. phone number. 
         -->
-        <div class="section" id="contactDiv"> 
+        <div class="section" id="contactDiv">
+            <div class="titleLine1"></div> 
             <h1 class="heading" id="contactHeading">
                 CONTACT US
             </h1>
-                <form action="/action_page.php">
-                    Name:
-                    <br>
-                    <input type="text" name="FirstName" placeholder="Your Name"><br>
-                    <br>
-                    Email Address:
-                    <br> 
-                    <input type="text" name="Email" placeholder="Email Address"><br>
-                    <br>
-                    Description:
-                    <br> 
-                    <textarea rows="10" cols="60"> 
-                    </textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            <p id="other">
-                Email address: asdfjsifjofjasoinf
+            <div class="titleLine2"></div>
+            <form action="/action_page.php">
+                Name:
                 <br>
+                <input type="text" name="FirstName"><br>
                 <br>
-                Phone Number: asijdsiofndgnoiadg
+                Email Address:
+                <br> 
+                <input type="text" name="Email"><br>
                 <br>
-                <br>
-                Address: asiojsogijdgkndfgvv
-                <br>
-                <br>
-                Fax: siofjadiognargagiaeg
-                <br>
-                <br>
-                Follow Us on social media!
-                <br>
-                <br>
-                asiosdjigniovjemoivwevoinewf
-            </p>
+                Description:
+                <br> 
+                <textarea rows="10" cols="103"> 
+                </textarea>
+            </form>
+            <div class="btn">
+                <a class="abtn" href="https://gmail.com">SUBMIT</a>
+            </div>
         </div>
 
         <!-- 
             Footer for decoration purposes. Will contain SheetSeek Inc. and Logo
         -->
         <footer class="section" style="clear:left;">
-            <h2 id="footerLogo">
-                SheetSeek Inc. &copy;
+            <div class="bottomDiv" style="width: 30%; padding-top: 1%;">
+                <a href="https://facebook.com">
+                    <img src="./img/facebook_logo.png" class="socialMedia">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./img/ig_logo.png" class="socialMedia">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./img/twitter_logo.png" class="socialMedia">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="./img/linked_logo.png" class="socialMedia">
+                </a>
+                <img src="./img/lynqup_logo.png" class="socialMedia">
+                <br>
+                <p class="footerText" style="text-align: left; padding-left: 5%;">
+                    FOLLOW US ON SOCIAL MEDIA!
+                </p>
+            </div>
+            <div class="bottomDiv" style="width: 11.5%; height: 20%;">
+                </div>
+            <div class="bottomDiv">
+            <h2 class="footerText" style="padding-top: 10%;">
+                SHEETSEEK INC. &copy;
+                2017-2018
+
             </h2>
+            <p class="footerText"> 
+                CANADA
+            </p>
+            </div>
+            <div class="bottomDiv" style="width: 20%; height: 20%;">
+            </div>
+            <p id="infoStuff">                    
+                Phone: 613-890-9990 &nbsp; &nbsp; &nbsp; E-Mail: info&#64;sheetseek.ca
+                <br>
+                <br>
+                1256 Tenth Line Road &nbsp; &nbsp; &nbsp; K8C 1L5 Ottawa, ON
+            </p>
         </footer>
     </body>
 </html>
