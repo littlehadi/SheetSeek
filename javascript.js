@@ -115,27 +115,27 @@ window.onscroll = function(e){
 
     var lineLength;
     var marginLength;
-    if (Math.abs(aboutTop) < 400){
-        lineLength = String(100 - Math.abs(aboutTop)/4);
-        marginLength = String((Math.abs(aboutTop)/4));
+    if (Math.abs(aboutTop) < 500){
+        lineLength = String(100 - Math.abs(aboutTop)/5);
+        marginLength = String((Math.abs(aboutTop)/5));
         $(".titleLine1").css("width", lineLength.concat("%"));
         $(".titleLine2").css("width", lineLength.concat("%"));
         $(".titleLine2").css("margin-left", marginLength.concat("%"));
-    }else if (Math.abs(featureTop) < 400){
-        lineLength = String(100 - Math.abs(featureTop)/4);
-        marginLength = String((Math.abs(featureTop)/4));
+    }else if (Math.abs(featureTop) < 500){
+        lineLength = String(100 - Math.abs(featureTop)/5);
+        marginLength = String((Math.abs(featureTop)/5));
         $(".titleLine1").css("width", lineLength.concat("%"));
         $(".titleLine2").css("width", lineLength.concat("%"));
         $(".titleLine2").css("margin-left", marginLength.concat("%"));
-    }else if (Math.abs(teamTop) < 400){
-        lineLength = String(100 - Math.abs(teamTop)/4);
-        marginLength = String((Math.abs(teamTop)/4));
+    }else if (Math.abs(teamTop) < 500){
+        lineLength = String(100 - Math.abs(teamTop)/5);
+        marginLength = String((Math.abs(teamTop)/5));
         $(".titleLine1").css("width", lineLength.concat("%"));
         $(".titleLine2").css("width", lineLength.concat("%"));
         $(".titleLine2").css("margin-left", marginLength.concat("%"));
-    }else if (Math.abs(contactTop) < 400){
-        lineLength = String(100 - Math.abs(contactTop)/4);
-        marginLength = String((Math.abs(contactTop)/4));
+    }else if (Math.abs(contactTop) < 500){
+        lineLength = String(100 - Math.abs(contactTop)/5);
+        marginLength = String((Math.abs(contactTop)/5));
         $(".titleLine1").css("width", lineLength.concat("%"));
         $(".titleLine2").css("width", lineLength.concat("%"));
         $(".titleLine2").css("margin-left", marginLength.concat("%"));

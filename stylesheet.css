@@ -301,6 +301,11 @@ footer{
 
 textarea{
     resize: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;  
 }
 
 .abtn{
@@ -316,7 +321,7 @@ textarea{
 
 .btn{
     display: block;
-    margin-left: 42%;
+    margin-left: 43.5%;
     padding-bottom: 5%;
 }
 
@@ -353,10 +358,10 @@ textarea{
 }
 
 .socialMedia{
-    width: 8%;
-    height: 4.6%;
-    margin-left: 5.5%;
-    margin-right: 3%;
+    width: 7%;
+    height: 4%;
+    margin-left: 6%;
+    margin-right: 2.1%;
     margin-top: 5%;
 }
 
