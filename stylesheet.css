@@ -53,7 +53,7 @@ span{
     float: left;
     margin-left: 2.1%;
     margin-right: 2.8%;
-    margin-top: 0.8%;
+    margin-top: 1.1%;
     font-family: niceFont;
     color: white;
     font-size: 0.85em;
@@ -185,8 +185,8 @@ span{
 .footerText{
     text-align: center;
     margin-top: 2%;
-    color: rgb(214,215,214);
-    font-size: 1.4em;
+    color: rgb(230,230,230);
+    font-size: 1em;
     font-family: niceFont;
 }
 
@@ -350,6 +350,7 @@ textarea{
     font-size: 0,8em;
     font-family: niceFont;
     padding-top: 2%;
+    margin-right: 2.8%;
 }
 
 .socialMedia{
@@ -358,6 +359,8 @@ textarea{
     margin-left: 5.5%;
     margin-right: 3%;
     margin-top: 5%;
+    padding-top: 2%;
+    font-size: 0.9em;
 }
 
 .bottomDiv{
