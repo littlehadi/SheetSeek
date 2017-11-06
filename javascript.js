@@ -154,18 +154,72 @@ window.onresize = function(event){
     }
 };
 
-var xPos = 0;
-var yPos = 0;
-var velX = 0;
-var velY = 0;
+var xPos1 = 0;
+var yPos1 = 0;
+var yInt1 = 0;
+var xPos2 = 0;
+var yPos2 = 0;
+var yInt2 = 0;
+var xPos3 = 0;
+var yPos3 = 0;
+var yInt3 = 0;
+var xPos4 = 0;
+var yPos4 = 0;
+var yInt4 = 0;
 var leafAnimation = setInterval(function(){
-    velX = Math.floor(Math.random()*5);
-    velY = Math.floor(Math.random()*5);
-    xPos+=velX;
-    yPos+=velY;
-    x = String(xPos).concat("px");
-    y = String(yPos).concat("px");
-    $("#leaf").css("left", x);
-    $("#leaf").css("top", y);
+    xPos1+=20;
+    yPos1= Math.sin(xPos1/250)*100 + xPos1/3 + yInt1 + 200;
+    var x1 = String(xPos1).concat("px");
+    var y1 = String(yPos1).concat("px");
+    $("#leaf1").css("left", x1);
+    $("#leaf1").css("bottom", y1);
+    if (xPos1 > 2000){
+        xPos1 = 0;
+        yInt1 = Math.random()*600 - Math.random()*600;
+    }
+    if (yPos1 > 1500){
+        yInt1 = Math.random()*600 - Math.random()*600;
+    }
 
+    xPos2+=20;
+    yPos2= Math.sin(xPos2/200)*150 + xPos2/3 + yInt2 + 200;
+    var x2 = String(xPos2).concat("px");
+    var y2 = String(yPos2).concat("px");
+    $("#leaf2").css("left", x2);
+    $("#leaf2").css("bottom", y2);
+    if (xPos2 > 2000){
+        xPos2 = 0;
+        yInt2 = Math.random()*600 - Math.random()*600;
+    }
+    if (yPos2 > 1500){
+        yInt2 = Math.random()*600 - Math.random()*600;
+    }
+
+    xPos3+=15;
+    yPos3= Math.sin(xPos3/220)*200 + xPos3/3 + yInt3 + 200;
+    var x3 = String(xPos3).concat("px");
+    var y3 = String(yPos3).concat("px");
+    $("#leaf3").css("left", x3);
+    $("#leaf3").css("bottom", y3);
+    if (xPos3 > 2000){
+        xPos3 = 0;
+        yInt3 = Math.random()*600 - Math.random()*600;
+    }
+    if (yPos3 > 1500){
+        yInt3 = Math.random()*600 - Math.random()*600;
+    }
+
+    xPos4+=15;
+    yPos4= Math.sin(xPos4/300)*100 + xPos4/3 + yInt4 + 200;
+    var x4 = String(xPos4).concat("px");
+    var y4 = String(yPos4).concat("px");
+    $("#leaf4").css("left", x4);
+    $("#leaf4").css("bottom", y4);
+    if (xPos4 > 2000){
+        xPos4 = 0;
+        yInt4 = Math.random()*600 - Math.random()*600;
+    }
+    if (yPos4 > 1500){
+        yInt4 = Math.random()*600 - Math.random()*600;
+    }
 }, 50);
