@@ -398,3 +398,10 @@ textarea{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+#leaf{
+    z-index: 0;
+    position: absolute;
+    width: 2%;
+    height: 4%;
+}

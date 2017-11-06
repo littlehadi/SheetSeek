@@ -153,3 +153,19 @@ window.onresize = function(event){
         $(".navTab").css("display", "none");
     }
 };
+
+var xPos = 0;
+var yPos = 0;
+var velX = 0;
+var velY = 0;
+var leafAnimation = setInterval(function(){
+    velX = Math.floor(Math.random()*5);
+    velY = Math.floor(Math.random()*5);
+    xPos+=velX;
+    yPos+=velY;
+    x = String(xPos).concat("px");
+    y = String(yPos).concat("px");
+    $("#leaf").css("left", x);
+    $("#leaf").css("top", y);
+
+}, 50);
