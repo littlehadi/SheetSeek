@@ -13,7 +13,7 @@ Enrick Rainville - Student number: 300036704  -  Github Account: https://github.
 
 ### Description: ###
 
-SheetSeek is a web and mobile plateform designed and tailored to help students with a common issue: buying and selling school related products. Everything from textbooks to class notes to lab supplies, SheetSeek is the perfect app do narrow down exactly what you need and exactly how and where to get it for all your classes. Seek your success! 
+SheetSeek is a web and mobile platform designed and tailored to help students with a common issue: buying and selling school related products. Everything from textbooks to class notes to lab supplies, SheetSeek is the perfect app do narrow down exactly what you need and exactly how and where to get it for all your classes. Seek your success! 
 
 ### Slogan: ### 
 1. Seek your Success
