@@ -3,9 +3,10 @@
         <!-- basic boilerplate code, imports the JavaScript and CSS files ('Don't touch anything in the head tag!' -Zi) -->
         <title>SheetSeek</title>
         <link rel="shortcut icon" href="./img/logo.png" type="image/png" />
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <script src="javascript.js"></script>
-        <script src="jquery-3.2.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+        <script src="./javascript.js"></script>
+        <script src="./jquery-3.2.1.js"></script>
+        <script src="./imagesLoaded.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -13,6 +14,17 @@
         <!-- 
             header bar section at top of page 
         -->
+        <div class="load" id="loadingScreen">
+            <h1 class="load" id="loadText">
+                LOADING
+            </h1>
+            <div class="load" id="circle1">
+            </div>
+            <div class="load" id="circle2">
+            </div>
+            <div class="load" id="circle3">
+            </div>
+        </div>
         <img src="./img/leaf.png" class="leaf" id="leaf1">
         <img src="./img/leaf.png" class="leaf" id="leaf2">
         <img src="./img/leaf.png" class="leaf" id="leaf3">
@@ -120,7 +132,7 @@
             </h1>
             <div class="titleLine2"></div> 
             <div class="memberPortrait">
-                <img class="headshot" id="ziHeadshot" src="./img/ziPic.png" alt="Zi Gao">
+                <img class="headshot" id="ziHeadshot" src="https://sheetseek.github.io/SheetSeek/img/ziPic.png" alt="Zi Gao">
                 <p class="memberDescription" id="ziDescription">
                     <span class="name">Zi Gao</span>
                     <br>
@@ -133,7 +145,7 @@
                 </p>
             </div>
             <div class="memberPortrait">
-                <img class="headshot" id="enrickHeadshot" src="./img/enrickPic.png" alt="Enrick Rainville">
+                <img class="headshot" id="enrickHeadshot" src="https://sheetseek.github.io/SheetSeek/img/enrickPic.png" alt="Enrick Rainville">
                 <p class="memberDescription" id="enrickDescription">
                     <span class="name">Enrick Rainville</span>
                     <br>
@@ -146,7 +158,7 @@
                 </p>
             </div>
             <div class="memberPortrait" id="fifthPortrait">
-                <img class="headshot" id="majdHeadshot" src="./img/majdPic.png" alt="Majd Khodr">
+                <img class="headshot" id="majdHeadshot" src="https://sheetseek.github.io/SheetSeek/img/majdPic.png" alt="Majd Khodr">
                 <p class="memberDescription" id="josephDescription">
                     <span class="name">Majd Khodr</span>
                     <br>
@@ -159,7 +171,7 @@
                 </p>
             </div>  
             <div class="memberPortrait" id="fourthPortrait" style="margin-left: 17%">
-                <img class="headshot" id="douniaHeadshot" src="./img/douniaPic.png" alt="Dounia Mansouri">
+                <img class="headshot" id="douniaHeadshot" src="https://sheetseek.github.io/SheetSeek/img/douniaPic.png" alt="Dounia Mansouri">
                 <p class="memberDescription" id="douniaDescription">
                     <span class="name">Dounia Mansouri</span>
                     <br>
@@ -172,7 +184,7 @@
                 </p>
             </div> 
             <div class="memberPortrait">
-                <img class="headshot" id="josephHeadshot" src="./img/josephPic.png" alt="Joseph Abboud">
+                <img class="headshot" id="josephHeadshot" src="https://sheetseek.github.io/SheetSeek/img/josephPic.png" alt="Joseph Abboud">
                 <p class="memberDescription" id="josephDescription">
                     <span class="name">Joseph Abboud</span>
                     <br>
