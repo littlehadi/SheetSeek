@@ -152,4 +152,20 @@ window.onresize = function(event){
     if ($("#fourthNavTab")[0].getBoundingClientRect().top >= 20){
         $(".navTab").css("display", "none");
     }
-};
+}
+
+
+var checkLoad = setInterval(function(){
+    $('body').imagesLoaded().always(function(instance){
+        setTimeout(function() {
+            //your code to be executed after 1 second
+            $('.load').animate({top: -2000}, 1500, function() {
+                // Animation complete.
+            });
+            setTimeout(function(){
+                $('.load').css('display', 'none');
+            }, 1500);
+            clearInterval(checkLoad);
+          }, 2000);
+    });
+}, 10);
