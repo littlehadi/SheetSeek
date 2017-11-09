@@ -150,25 +150,26 @@ window.onresize = function(event){
     $(".headshot").css("height", newHeight);
     
     if ($("#fourthNavTab")[0].getBoundingClientRect().top >= 20){
-        $(".navTab").css("display", "none");
+        $("#firstNavTab").css("margin-left", "2%");
     }
 };
 
 var xPos1 = 0;
 var yPos1 = 0;
 var yInt1 = 0;
-var xPos2 = 0;
+var xPos2 = -200;
 var yPos2 = 0;
 var yInt2 = 0;
 var xPos3 = 0;
 var yPos3 = 0;
 var yInt3 = 0;
-var xPos4 = 0;
+var xPos4 = -200;
 var yPos4 = 0;
 var yInt4 = 0;
 var leafAnimation = setInterval(function(){
+
     xPos1+=20;
-    yPos1= Math.sin(xPos1/250)*100 + xPos1/3 + yInt1 + 200;
+    yPos1= Math.sin(xPos1/250)*100 + xPos1/5 + yInt1 + 400;
     var x1 = String(xPos1).concat("px");
     var y1 = String(yPos1).concat("px");
     $("#leaf1").css("left", x1);
@@ -182,7 +183,7 @@ var leafAnimation = setInterval(function(){
     }
 
     xPos2+=20;
-    yPos2= Math.sin(xPos2/200)*150 + xPos2/3 + yInt2 + 200;
+    yPos2= Math.sin(xPos2/200)*75 + xPos2/5 + yInt2 + 400;
     var x2 = String(xPos2).concat("px");
     var y2 = String(yPos2).concat("px");
     $("#leaf2").css("left", x2);
@@ -196,7 +197,7 @@ var leafAnimation = setInterval(function(){
     }
 
     xPos3+=15;
-    yPos3= Math.sin(xPos3/220)*200 + xPos3/3 + yInt3 + 200;
+    yPos3= Math.sin(xPos3/220)*100 + xPos3/5 + yInt3 + 400;
     var x3 = String(xPos3).concat("px");
     var y3 = String(yPos3).concat("px");
     $("#leaf3").css("left", x3);
@@ -210,7 +211,7 @@ var leafAnimation = setInterval(function(){
     }
 
     xPos4+=15;
-    yPos4= Math.sin(xPos4/300)*100 + xPos4/3 + yInt4 + 200;
+    yPos4= Math.sin(xPos4/300)*50 + xPos4/5 + yInt4 + 400;
     var x4 = String(xPos4).concat("px");
     var y4 = String(yPos4).concat("px");
     $("#leaf4").css("left", x4);
@@ -222,6 +223,10 @@ var leafAnimation = setInterval(function(){
     if (yPos4 > 1500){
         yInt4 = Math.random()*600 - Math.random()*600;
     }
+    $('.leaf').transition({
+        perspective:'100px',
+        rotate3d:'1, 1, 0, 180deg'
+    });
 }, 50);
 
 
@@ -229,13 +234,23 @@ var checkLoad = setInterval(function(){
     $('body').imagesLoaded().always(function(instance){
         setTimeout(function() {
             //your code to be executed after 1 second
+            $(document).ready(function(){
+                $(this).scrollTop(0);
+            });
             $('.load').animate({top: -2000}, 1500, function() {
                 // Animation complete.
             });
             setTimeout(function(){
                 $('.load').css('display', 'none');
             }, 1500);
+            $('header').animate({top: 0}, 2000, function(){
+            });
             clearInterval(checkLoad);
-          }, 2000);
+          }, 1000);
     });
 }, 10);
+
+function submitForm(){
+    $('textarea').val('');
+    alert("Thank you for your feedback, a correspondent from our team will be in touch shortly!");
+}

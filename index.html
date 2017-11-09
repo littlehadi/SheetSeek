@@ -7,6 +7,7 @@
         <script src="./javascript.js"></script>
         <script src="./jquery-3.2.1.js"></script>
         <script src="./imagesLoaded.js"></script>
+        <script src="./jquery.transit.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -53,7 +54,6 @@
         <div class="section" id="pictureDiv">
             <img src="./img/backgroundName.png" alt="Background Image" id="mainImage">
         </div>
-
         <!-- 
             About us section, we should elaborate what our product is, what problems we hope to solve. 
             Contains visual to the left side and a text paragraph to the left 
@@ -65,8 +65,11 @@
             </h1>
             <div class="titleLine2"></div>
             <div class="subDiv" id="subDiv3">
-                <img class="sideImage" src="./img/book.png" style="margin-top: 0; padding-top: 0;" alt="logo" id="aboutLogo">
+                <img class="sideImage" src="./img/books.png" alt="logo" id="aboutLogo">
                 <p class="description" id="aboutDescription">
+                    <br>
+                    <br>
+                    <br>
                     <strong>SheetSeek</strong> was built with the main purpose of helping and facilitating students lives. 
                     A survey conducted in 2016 proved that more than <b>90 percent</b> of students found post-secondary education to be a very stressful experience. 
                     That's why there's SheetSeek. We wanted to create a simple and helpful platform that relieves some of the responsibilities 
@@ -91,7 +94,7 @@
             </h1>
             <div class="titleLine2"></div>
             <div class="subDiv" id="subDiv1">
-                <img class="sideImage" src="./img/magnifyingGlass.png" alt="icon" id="featurePic1">
+                <img class="sideImage" src="./img/uo.jpg" alt="icon" id="featurePic1">
                 <p class="description" id="featureDescription1">
                     <span class="subheading">No More Confusion, No More Stress</span>
                     <br>
@@ -116,7 +119,7 @@
                     <span class="subheading">Your Own Student Community</span>
                     <br>
                     <br>
-                    <strong> SheetSeek </strong> serves as a centralized hub for fellow students who are trying to buy and resell their textbooks as well as other school materials in special groupchats based on course codes! It enables fast and easy communication between students, eliminating the burden of buying and selling. 
+                    <strong> SheetSeek </strong> serves as a centralized hub for fellow students who are trying to buy and resell their textbooks as well as other school materials in special groupchats based on course codes! It enables fast and easy communication between students, eliminating the burden of buying and selling. SheetSeek also serves as a centralized hub for tutors! Upper year students can easily post tutoring offers for younger students to check out. 
                 </p>
             </div>
         </div>
@@ -132,7 +135,7 @@
             </h1>
             <div class="titleLine2"></div> 
             <div class="memberPortrait">
-                <img class="headshot" id="ziHeadshot" src="https://sheetseek.github.io/SheetSeek/img/ziPic.png" alt="Zi Gao">
+                <img class="headshot" id="ziHeadshot" src="./img/ziPic.png" alt="Zi Gao">
                 <p class="memberDescription" id="ziDescription">
                     <span class="name">Zi Gao</span>
                     <br>
@@ -145,7 +148,7 @@
                 </p>
             </div>
             <div class="memberPortrait">
-                <img class="headshot" id="enrickHeadshot" src="https://sheetseek.github.io/SheetSeek/img/enrickPic.png" alt="Enrick Rainville">
+                <img class="headshot" id="enrickHeadshot" src="./img/enrickPic.png" alt="Enrick Rainville">
                 <p class="memberDescription" id="enrickDescription">
                     <span class="name">Enrick Rainville</span>
                     <br>
@@ -158,7 +161,7 @@
                 </p>
             </div>
             <div class="memberPortrait" id="fifthPortrait">
-                <img class="headshot" id="majdHeadshot" src="https://sheetseek.github.io/SheetSeek/img/majdPic.png" alt="Majd Khodr">
+                <img class="headshot" id="majdHeadshot" src="./img/majdPic.png" alt="Majd Khodr">
                 <p class="memberDescription" id="josephDescription">
                     <span class="name">Majd Khodr</span>
                     <br>
@@ -171,7 +174,7 @@
                 </p>
             </div>  
             <div class="memberPortrait" id="fourthPortrait" style="margin-left: 17%">
-                <img class="headshot" id="douniaHeadshot" src="https://sheetseek.github.io/SheetSeek/img/douniaPic.png" alt="Dounia Mansouri">
+                <img class="headshot" id="douniaHeadshot" src="./img/douniaPic.png" alt="Dounia Mansouri">
                 <p class="memberDescription" id="douniaDescription">
                     <span class="name">Dounia Mansouri</span>
                     <br>
@@ -184,7 +187,7 @@
                 </p>
             </div> 
             <div class="memberPortrait">
-                <img class="headshot" id="josephHeadshot" src="https://sheetseek.github.io/SheetSeek/img/josephPic.png" alt="Joseph Abboud">
+                <img class="headshot" id="josephHeadshot" src="./img/josephPic.png" alt="Joseph Abboud">
                 <p class="memberDescription" id="josephDescription">
                     <span class="name">Joseph Abboud</span>
                     <br>
@@ -223,7 +226,7 @@
                 </textarea>
             </form>
             <div class="btn">
-                <a class="abtn" href="https://gmail.com">SUBMIT</a>
+                <a class="abtn" onClick='submitForm()'>SUBMIT</a>
             </div>
         </div>
 
@@ -232,16 +235,16 @@
         -->
         <footer class="section" style="clear:left;">
             <div class="bottomDiv" style="width: 30%; padding-top: 1%;">
-                <a href="https://facebook.com">
+                <a target="_blank" href="https://www.facebook.com/SheetSeek/">
                     <img src="./img/facebook_logo.png" class="socialMedia">
                 </a>
-                <a href="https://instagram.com">
+                <a target="_blank" href="https://www.instagram.com/sheetseek_co/">
                     <img src="./img/ig_logo.png" class="socialMedia">
                 </a>
-                <a href="https://twitter.com">
+                <a target="_blank" href="https://twitter.com/SheetSeek_Co">
                     <img src="./img/twitter_logo.png" class="socialMedia">
                 </a>
-                <a href="https://linkedin.com">
+                <a target="_blank" href="https://www.linkedin.com/in/sheetseek-co-a64954151/">
                     <img src="./img/linked_logo.png" class="socialMedia">
                 </a>
                 <img src="./img/lynqup_logo.png" class="socialMedia">
