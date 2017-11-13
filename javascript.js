@@ -168,7 +168,7 @@ var yPos4 = 0;
 var yInt4 = 0;
 var leafAnimation = setInterval(function(){
 
-    xPos1+=20;
+    xPos1+=4;
     yPos1= Math.sin(xPos1/250)*100 + xPos1/5 + yInt1 + 400;
     var x1 = String(xPos1).concat("px");
     var y1 = String(yPos1).concat("px");
@@ -182,7 +182,7 @@ var leafAnimation = setInterval(function(){
         yInt1 = Math.random()*600 - Math.random()*600;
     }
 
-    xPos2+=20;
+    xPos2+=5;
     yPos2= Math.sin(xPos2/200)*75 + xPos2/5 + yInt2 + 400;
     var x2 = String(xPos2).concat("px");
     var y2 = String(yPos2).concat("px");
@@ -196,7 +196,7 @@ var leafAnimation = setInterval(function(){
         yInt2 = Math.random()*600 - Math.random()*600;
     }
 
-    xPos3+=15;
+    xPos3+=5;
     yPos3= Math.sin(xPos3/220)*100 + xPos3/5 + yInt3 + 400;
     var x3 = String(xPos3).concat("px");
     var y3 = String(yPos3).concat("px");
@@ -210,7 +210,7 @@ var leafAnimation = setInterval(function(){
         yInt3 = Math.random()*600 - Math.random()*600;
     }
 
-    xPos4+=15;
+    xPos4+=4.5;
     yPos4= Math.sin(xPos4/300)*50 + xPos4/5 + yInt4 + 400;
     var x4 = String(xPos4).concat("px");
     var y4 = String(yPos4).concat("px");
@@ -223,11 +223,7 @@ var leafAnimation = setInterval(function(){
     if (yPos4 > 1500){
         yInt4 = Math.random()*600 - Math.random()*600;
     }
-    $('.leaf').transition({
-        perspective:'100px',
-        rotate3d:'1, 1, 0, 180deg'
-    });
-}, 50);
+}, 10);
 
 
 var checkLoad = setInterval(function(){
@@ -246,7 +242,7 @@ var checkLoad = setInterval(function(){
             $('header').animate({top: 0}, 2000, function(){
             });
             clearInterval(checkLoad);
-          }, 1000);
+          }, 500);
     });
 }, 10);
 

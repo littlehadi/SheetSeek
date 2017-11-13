@@ -57,7 +57,7 @@ span{
     margin-top: 0.8%;
     font-family: niceFont;
     color: white;
-    font-size: 0.85em;
+    font-size: 0.75em;
     letter-spacing: 0.35em;
     padding-bottom: 0.5%;
     padding-left: 0.3%;
@@ -361,7 +361,7 @@ textarea{
 
 #infoStuff{
     color: rgb(214,215,214);
-    font-size: 0,8em;
+    font-size: 0.7em;
     font-family: niceFont;
     padding-top: 2%;
 }
@@ -385,7 +385,7 @@ textarea{
     width: 1.5%;
     height: 3%;
     bottom: 2px;
-    animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
 }
 #loadingScreen{
     background-color: rgb(30, 32, 38);
@@ -397,14 +397,15 @@ textarea{
 
 #loadText{
     color: orange;
-    position: fixed;
     font-family: niceFont;
     font-size: 3em;
     letter-spacing: 1em;
     display: block;
-    left: 36%;
-    top: 25%;
+    text-align: center;
     stroke-width: bolder;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 2.5%;
 }
 
 #circle1{
@@ -415,9 +416,10 @@ textarea{
     width: 200px;
     height: 200px;
     animation: spin 1.5s linear infinite;  
-    position: fixed;
-    left: 42.5%;
-    top: 45%;
+    margin: auto;
+    position: relative;
+    display: block;
+    z-index: 5;
 }
 
 @keyframes spin {
@@ -438,17 +440,21 @@ textarea{
     width: 100px;
     height: 100px;
     animation: spin2 2s linear infinite;  
-    position: fixed;
-    left: 45.2%;
-    top: 50%;
+    margin: auto;
+    display: block;
+    z-index: 50;
+    position: relative;
+    top: -17%;
 }
 
 #circle3{
-    position: fixed;
     width: 20px;
     height: 20px;
     background-color: #80c5f3;
     border-radius: 50%;
-    left: 47.7%;
-    top: 55%;
+    margin: auto;
+    display: block;
+    z-index: 100;
+    position: relative;
+    top: -24%;
 }
