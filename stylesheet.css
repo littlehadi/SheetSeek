@@ -47,6 +47,10 @@ span{
     display: inline;
 }
 
+.p{
+    overflow: scroll;   
+}
+
 /*
     For all the individual navigation link tabs
 */
